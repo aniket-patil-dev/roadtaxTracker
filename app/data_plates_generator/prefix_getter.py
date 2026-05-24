@@ -13,15 +13,16 @@ GOODS_PLATES_LETTERS: Final = {
 }
 
 class PrefixGetter:
-
     @staticmethod
     def get_cars_plate_prefix() -> str:
         prefix: str = (f"{random.choice(CARS_PLATES_LETTERS[1])}"
                        f"{random.choice(CARS_PLATES_LETTERS[2])}"
                        f"{random.choice(CARS_PLATES_LETTERS[3])}")
         return prefix
+
+
     @staticmethod
-    def get_good_plate_prefi() -> str:
+    def get_good_plate_prefix() -> str:
         prefix: str = (f"{random.choice(GOODS_PLATES_LETTERS[1])}"
                        f"{random.choice(GOODS_PLATES_LETTERS[2])}")
         return prefix

@@ -1,9 +1,9 @@
-from model import Crud
+from models.model import Crud
 
 c = Crud()
 
-def add_new(vehicle, expiry):
-    add_item = c.add_new(vehicle, expiry)
+def add_new(vehicle_id, vehicle_no, expiry):
+    add_item = c.create_vehicle(vehicle_id, vehicle_no, expiry)
     return add_item
 
 
@@ -20,8 +20,8 @@ def sort_show_vehicle():
     return list_vehicle
 
 
-def show_within(dayarg):
-    sorted_list = c.sort_within(dayarg)
+def show_within(day_arg):
+    sorted_list = c.sort_within(day_arg)
     return sorted_list
 
 

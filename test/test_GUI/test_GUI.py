@@ -1,5 +1,5 @@
 import unittest
-from App.GUI import view
+from app.GUI import view
 
 class TestGUI(unittest.TestCase):
 

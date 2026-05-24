@@ -1,6 +1,6 @@
 import unittest
 
-from App.vehicule_generator.vehicleGen import VehiculeGenerator
+from app.vehicle_generator.vehicle_generator import VehiculeGenerator
 
 
 class TestVehicleNumber(unittest.TestCase):
